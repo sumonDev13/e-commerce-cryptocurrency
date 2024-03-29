@@ -121,13 +121,13 @@ export default function Navbar() {
           </div>
 
           <nav className="flex lg:w-2/5 flex-wrap lg:justify-end items-center text-base md:ml-auto">
-            <Link to="/auction" className="relative inline-flex items-center">
+            {/* <Link to="/auction" className="relative inline-flex items-center">
               <span className="relative inline-flex items-center rounded px-2.5 py-1.5 font-medium">
                 <span className="ml-1.5 text-base text-gray-600 hover:text-gray-900">
                   Auction
                 </span>
               </span>
-            </Link>
+            </Link> */}
 
             <Link to="/cart" className="relative inline-flex items-center mr-6">
               <span className="relative inline-flex items-center rounded px-2.5 py-1.5 font-medium">
