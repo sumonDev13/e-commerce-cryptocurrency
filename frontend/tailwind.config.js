@@ -16,6 +16,9 @@ const backfaceVisibility = plugin(function ({ addUtilities }) {
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      
+    },
     extend: {
       colors: {
         primarycolor: '#06B6D4',

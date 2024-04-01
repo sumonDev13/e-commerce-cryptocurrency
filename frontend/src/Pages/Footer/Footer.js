@@ -1,47 +1,107 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <footer className="text-gray-600 body-font bottom-0 left-0 w-full">
-        <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <Link
-            to="/"
-            className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-          >
-            <span className="ml-3 text-2xl font-bold">
-              <span className="text-cyan-500">Digital</span>Stack
-            </span>
-          </Link>
-          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-            Developed By{' '}
-            <a
-              href="https://vaibhaw.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-              className=" hover:text-cyan-500 hover:font-medium hover:text-xl duration-200"
-            >
-              sumonmondal.aiub.cse@gmail.com
-            </a>
-          </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            {/* <button>
-              <a
-                href="https://github.com/itsvaibhavmishra/ecombidding"
-                className="bg-white hover:bg-[#161B22] hover:text-white duration-200 border text-black py-2 px-4 rounded"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fab fa-github-alt mx-2"></i>
-                GitHub
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Company</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="text-black font-ubantu hover:text-gray-400">
+                About Us
               </a>
-            </button> */}
-          </span>
+            </li>
+            <li>
+              <a href="www.google.com" className="hover:text-gray-400">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Press
+              </a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Products</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Feature 1
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Feature 2
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Feature 3
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Resources</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Docs
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Support
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Connect</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="flex justify-between items-center">
+          <div className="text-sm">
+            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+          </div>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-gray-400">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-gray-400">
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;
