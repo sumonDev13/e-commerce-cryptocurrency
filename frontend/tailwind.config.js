@@ -17,7 +17,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      
+      'Pacifico': ["Pacifico", "Sans-serif"]
     },
     extend: {
       colors: {
