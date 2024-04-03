@@ -4,6 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { Store } from '../../Store';
 
+import { FaCartArrowDown } from "react-icons/fa";
+
 export default function Navbar() {
   const [text, setText] = useState('');
   const navigate = useNavigate();
@@ -138,8 +140,8 @@ export default function Navbar() {
                     </span>
                   </span>
                 )}
-                <span className="ml-1.5 text-base text-gray-600 hover:text-gray-900">
-                  Cart
+                <span className="ml-1.5 text-xl text-cyan-600 hover:text-gray-900">
+                <FaCartArrowDown />
                 </span>
               </span>
             </Link>
