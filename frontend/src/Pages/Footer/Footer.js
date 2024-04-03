@@ -2,7 +2,7 @@
 export default function Footer() {
 
     return (
-        <div className="bg-zinc-100 px-4">
+        <div className="bg-cyan-200 px-4 mt-24">
             <div className="container lg:grid lg:grid-cols-2 py-14">
                 <div className="grid gap-4 pb-4 text-left lg:pb-0 lg:grid-cols-3">
                     <div>
@@ -41,19 +41,6 @@ export default function Footer() {
                     <p className="pt-4 text-gray-500">
                         By subscribing to our newsletter, you agree to receive emails from us. Your personal data will be stored and processed in accordance with our Privacy Policy and you can unsubscribe at any time.
                     </p>
-                </div>
-            </div>
-
-            {/* Copy Right */}
-            <div className="py-10 bg-zinc-200">
-                <div className="container text-center text-gray-500 lg:justify-between lg:flex">
-                    <div className="pb-4 lg:pb-0">
-                        <p>&copy;2024.All rights reserved </p>
-                    </div>
-                    <div className="">
-                        <span className="p-4 hover:underline" href="/privacy">Privacy</span>
-                        <span className="p-4 hover:underline" href="/terms">Terms</span>
-                    </div>
                 </div>
             </div>
         </div>
