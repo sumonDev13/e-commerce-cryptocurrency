@@ -80,7 +80,7 @@ export default function Navbar() {
   return (
     <>
       <ToastContainer position="bottom-center" limit={1} />
-      <header className="text-gray-600 body-font shadow-lg">
+      <header className="text-gray-600 body-font shadow-lg sticky inset-x-0 top-0 z-10 bg-opacity-60 bg-zinc-100 backdrop-blur-lg">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
             to="/"
