@@ -5,6 +5,8 @@ import axios from "axios";
 import { Store } from "../../Store";
 import { toast } from "react-toastify";
 
+import { GiShoppingCart } from "react-icons/gi";
+
 function Product(props) {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
@@ -47,8 +49,8 @@ function Product(props) {
               </div>
             </Link>
             <div className="flex justify-between items-center mb-4">
-              <p className="text-gray-700 font-medium text-lg mt-4  transition ease-in-out delay-150 bg-gray-300 rounded-full px-4 py-1">
-                <small>$</small> {product.price.toLocaleString("en-IN")}
+              <p className="text-gray-700 text-lg mt-4  transition ease-in-out delay-150 bg-gray-300 rounded-full px-4 py-1 font-extrabold">
+                <span className="font-extrabold">$</span> {product.price.toLocaleString("en-IN")}
               </p>
               {product.stock === 0 ? (
                 <button
@@ -60,11 +62,13 @@ function Product(props) {
                   Out of Stock
                 </button>
               ) : (
+                
                 <button
-                  className="bg-cyan-200 hover:bg-gray-300 py-2 px-4 rounded-lg mt-4"
+                  className="bg-cyan-200 hover:bg-gray-300 py-2 px-4 rounded-lg mt-4 font-Poppins font-bold flex flex-row"
                   onClick={() => addToCartHandler(product)}
                 >
-                  Add to Cart
+                  <div className="text-xl "><GiShoppingCart /></div>
+                  <span className="px-2">Add to cart</span>
                 </button>
               )}
             </div>
