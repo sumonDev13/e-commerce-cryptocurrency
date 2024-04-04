@@ -33,7 +33,7 @@ function Product(props) {
   return (
     <div className="flex flex-wrap overflow-x-hidden">
       <div className="w-80 p-4">
-        <div className="h-full rounded-lg overflow-hidden shadow-md border border-gray-200">
+        <div className="h-full rounded-xl overflow-hidden shadow-lg border border-gray-200">
           <Link to={`/products/${product.url}`}>
             <img
               className="w-full h-64 object-contain mx-auto hover:scale-105 duration-500"
@@ -49,7 +49,7 @@ function Product(props) {
               </div>
             </Link>
             <div className="flex justify-between items-center mb-4">
-              <p className="text-gray-700 text-lg mt-4  transition ease-in-out delay-150 bg-gray-300 rounded-full px-4 py-1 font-extrabold">
+              <p className="text-cyan-800 text-lg mt-4  transition ease-in-out delay-150 bg-gray-300 rounded-full px-4 py-1 font-extrabold">
                 <span className="font-extrabold">$</span> {product.price.toLocaleString("en-IN")}
               </p>
               {product.stock === 0 ? (
@@ -64,11 +64,11 @@ function Product(props) {
               ) : (
                 
                 <button
-                  className="bg-cyan-200 hover:bg-gray-300 py-2 px-4 rounded-lg mt-4 font-Poppins font-bold flex flex-row"
+                  className="bg-cyan-500 hover:bg-gray-300 py-2 px-4 rounded-lg mt-4 font-Poppins font-bold flex flex-row text-white"
                   onClick={() => addToCartHandler(product)}
                 >
-                  <div className="text-xl "><GiShoppingCart /></div>
-                  <span className="px-2">Add to cart</span>
+                  <div className="text-xl"><GiShoppingCart /></div>
+                  <span className="px-2 ">Add to cart</span>
                 </button>
               )}
             </div>
