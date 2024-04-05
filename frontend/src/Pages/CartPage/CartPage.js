@@ -143,10 +143,10 @@ export default function CartPage() {
                             </div>
                           </td>
                           <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
-                            ₹{item.price.toLocaleString('en-IN')}
+                            ${item.price.toLocaleString('en-IN')}
                           </td>
                           <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
-                            ₹
+                            $
                             {(item.quantity * item.price).toLocaleString(
                               'en-IN'
                             )}
@@ -182,7 +182,7 @@ export default function CartPage() {
                 <div className="flex justify-between mb-4">
                   <span className="text-gray-500">Total:</span>
                   <span className="text-gray-900 font-medium">
-                    ₹
+                    $
                     {cartItems
                       .reduce(
                         (acc, item) => acc + item.quantity * item.price,

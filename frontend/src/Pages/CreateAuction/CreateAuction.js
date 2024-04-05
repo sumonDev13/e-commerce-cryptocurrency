@@ -184,7 +184,7 @@ const CreateAuction = () => {
                       className="w-full border-gray-300 rounded-lg px-4 py-2 bg-gray-100 focus:outline-none focus:shadow-outline"
                     />
                     <div className="absolute inset-y-0 right-0 pr-8 flex items-center pointer-events-none">
-                      <span className="text-gray-400">₹</span>
+                      <span className="text-gray-400">$</span>
                     </div>
                   </div>
                 </div>

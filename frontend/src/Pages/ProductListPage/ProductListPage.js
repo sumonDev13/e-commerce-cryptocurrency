@@ -226,7 +226,7 @@ export default function ProductListPage() {
                       <span className="ml-2">{product.name}</span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      <small>₹</small>
+                      <small>$</small>
                       {product.price.toLocaleString('en-IN')}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">

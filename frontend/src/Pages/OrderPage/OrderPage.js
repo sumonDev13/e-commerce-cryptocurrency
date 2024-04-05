@@ -244,14 +244,14 @@ export default function OrderPage() {
                     </div>
                     <div className="flex justify-between space-x-8 items-start w-full">
                       <p className="text-base light:text-white xl:text-lg leading-6">
-                        <small>₹</small>
+                        <small>$</small>
                         {item.price}
                       </p>
                       <p className="text-base light:text-white xl:text-lg leading-6 text-gray-800">
                         {item.quantity}
                       </p>
                       <p className="text-base light:text-white xl:text-lg font-semibold leading-6 text-gray-800">
-                        <small>₹</small>
+                        <small>$</small>
                         {item.quantity * item.price}
                       </p>
                     </div>
@@ -270,7 +270,7 @@ export default function OrderPage() {
                       Items
                     </p>
                     <p className="text-base light:text-gray-300 leading-4 text-gray-600">
-                      <small>₹</small>
+                      <small>$</small>
                       {order.itemsPrice.toFixed(2)}
                     </p>
                   </div>
@@ -279,7 +279,7 @@ export default function OrderPage() {
                       Tax
                     </p>
                     <p className="text-base light:text-gray-300 leading-4 text-gray-600">
-                      <small>₹</small>
+                      <small>$</small>
                       {order.taxPrice.toFixed(2)}
                     </p>
                   </div>
@@ -288,7 +288,7 @@ export default function OrderPage() {
                       Shipping
                     </p>
                     <p className="text-base light:text-gray-300 leading-4 text-gray-600">
-                      <small>₹</small>
+                      <small>$</small>
                       {order.shippingPrice.toFixed(2)}
                     </p>
                   </div>

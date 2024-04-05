@@ -93,7 +93,7 @@ function ProductItems() {
             </div>
           </div>
           <p className="text-lg mb-2">
-            Price: <small>₹</small>
+            Price: <small>$</small>
             {product.price.toLocaleString('en-IN')}
           </p>
           <p className="text-lg mb-2">Description: {product.description}</p>
@@ -103,7 +103,7 @@ function ProductItems() {
             <li className="py-2 flex justify-between items-center">
               <span>Price:</span>
               <span className="font-bold">
-                <small>₹</small>
+                <small>$</small>
                 {product.price.toLocaleString('en-IN')}
               </span>
             </li>

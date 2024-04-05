@@ -103,7 +103,7 @@ export default function Dashboard() {
                   Total Sales
                 </p>
                 <h3 className="text-sm md:text-xl font-bold text-gray-900 mr-4">
-                  <small>₹</small>
+                  <small>$</small>
                   {summary.orders && summary.orders[0]
                     ? summary.orders[0].totalSales.toLocaleString('en-IN')
                     : 0}

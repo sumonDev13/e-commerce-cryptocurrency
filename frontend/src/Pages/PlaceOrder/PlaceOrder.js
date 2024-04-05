@@ -169,7 +169,7 @@ export default function PlaceOrder() {
                 <div className="flex justify-between">
                   <p className="text-lg font-semibold">Order Total</p>
                   <p className="text-lg font-semibold">
-                    <small>₹</small>
+                    <small>$</small>
                     {cart.totalPrice.toFixed(2).toLocaleString('en-IN')}
                   </p>
                 </div>
@@ -212,7 +212,7 @@ export default function PlaceOrder() {
                   <p className="text-gray-500">Quantity: {item.quantity}</p>
                 </div>
                 <p className="text-gray-700 ml-auto">
-                  Total: <small>₹</small>
+                  Total: <small>$</small>
                   {(item.quantity * item.price).toLocaleString('en-IN')}
                 </p>
               </div>

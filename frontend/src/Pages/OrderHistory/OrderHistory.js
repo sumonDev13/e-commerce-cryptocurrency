@@ -100,7 +100,7 @@ export default function OrderHistory() {
                   {order.createdAt.substring(0, 10)}
                 </div>
                 <div className="py-4 px-4 font-auto">
-                  <small>₹</small>
+                  <small>$</small>
                   {order.totalPrice.toFixed(2)}
                 </div>
                 <div

@@ -31,15 +31,15 @@ const reducer = (state, action) => {
 
 const prices = [
   {
-    name: '₹500 to ₹1000',
+    name: '$500 to $1000',
     value: '500-1000',
   },
   {
-    name: '₹1001 to ₹5000',
+    name: '$1001 to $5000',
     value: '1001-5000',
   },
   {
-    name: '₹5000 and up',
+    name: '$5000 and up',
     value: '5001-1000000',
   },
 ];
