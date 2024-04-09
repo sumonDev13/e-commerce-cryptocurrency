@@ -22,6 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('api is running');
+});
+
 // implementing api for paypal
 app.get('/api/keys/paypal', (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || 'sandbox');
