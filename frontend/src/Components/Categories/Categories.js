@@ -41,7 +41,7 @@ function Categories() {
               className="__a"
             >
               <span className="__span">
-                <i className="__i"></i>Clotings
+                <i className="__i"></i>Accounts
               </span>
             </Link>
           </li>
@@ -52,7 +52,7 @@ function Categories() {
               className="__a"
             >
               <span className="__span">
-                <i className="__i"></i>Shoes
+                <i className="__i"></i>Mails
               </span>
             </Link>
           </li>
@@ -63,7 +63,7 @@ function Categories() {
               className="__a"
             >
               <span className="__span">
-                <i className="__i"></i>Electronics
+                <i className="__i"></i>Services
               </span>
             </Link>
           </li>
