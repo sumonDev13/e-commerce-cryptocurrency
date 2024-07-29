@@ -4,8 +4,7 @@ import Product from "../../Components/Product/Product";
 import Loading from "../../Components/Loading/Loading";
 import ErrorPage from "../../Components/ErrorPage/ErrorPage";
 import Categories from "../../Components/Categories/Categories";
-import Slider from "../../Components/slider/Slider";
-import { images } from "../../Components/slider/SliderImages";
+import Banner from "../../Components/Banner/Banner";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -44,7 +43,7 @@ function Home() {
   return (
     <div className="home__component">
       <div className="py-8">
-        <Slider images={images} />
+        <Banner/>
       </div>
       <div className="text-center pb-4 pt-8">
         <h2 className="text-gray-600 flex justify-center align-middle text-center md:inline-block border-b-2 w-4/12 font-Poppins border-solid border-lightgray text-4xl px-2 mx-auto">
