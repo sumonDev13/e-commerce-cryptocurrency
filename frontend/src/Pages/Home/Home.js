@@ -5,6 +5,7 @@ import Loading from "../../Components/Loading/Loading";
 import ErrorPage from "../../Components/ErrorPage/ErrorPage";
 import Categories from "../../Components/Categories/Categories";
 import Banner from "../../Components/Banner/Banner";
+import Info from "../../Info/Info";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -42,7 +43,8 @@ function Home() {
 
   return (
     <div className="home__component">
-      <div className="py-8">
+      <div className="sm:px-32 sm:py-4">
+        <Info/>
         <Banner/>
       </div>
       <div className="text-center pb-4 pt-8">
