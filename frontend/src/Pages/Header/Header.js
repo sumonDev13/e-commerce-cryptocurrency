@@ -89,7 +89,7 @@ export default function Navbar() {
             className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 mb-0 md:mb-0"
           >
             <span className="ml-3 text-3xl font-bold">
-              <span className="text-cyan-500 font-Pacifico ">Digital</span>Stack
+              <span className="text-cyan-500 font-Pacifico ">Digital</span>Stack 2.0
             </span>
           </Link>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
