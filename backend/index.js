@@ -129,4 +129,26 @@ server.listen(port, () => {
   console.log(`Server at port: ${port}`);
 }); // server starts listining to requests
 
+
+app.post('/create-payment', async (req, res) => {
+  try {
+      const { amount, currency } = req.body;
+      const response = await axios.post('https://coinremitter.com/api/v3/BTC/get-transaction', {
+          price_amount: amount,
+          price_currency: currency,
+          pay_currency: 'btc',
+          ipn_callback_url: 'http://localhost:3000/createPayment',
+          order_id: 'your_order_id',
+          order_description: 'Order description'
+      }, {
+          headers: {
+              'x-api-key': process.env.NOWPAYMENTS_API_KEY
+          }
+      });
+      res.json(response.data);
+  } catch (error) {
+      res.status(500).json({ error: error.message });
+  }
+});
+
 export { server, io };
